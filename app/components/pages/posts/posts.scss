@@ -1,0 +1,60 @@
+.form-control {
+  background: #f8f9fa;
+}
+
+.post-comment {
+  background: #fafafa;
+  border: 1px solid #d5d5d5;
+  padding: 15px;
+  border-radius: 7px;
+  margin-bottom: 15px;
+
+  > h4 {
+    margin: 0px 0px 15px 0px;
+
+    > div {
+      background: var(--bs-secondary);
+      display: flex;
+      align-items: center;
+      width: auto;
+      max-width: 320px;
+      color: #ffffff;
+      height: 32px;
+      padding: 0px 10px;
+      border-radius: 18px;
+    }
+  }
+
+  &:last-of-type {
+    margin-bottom: 0px;
+  }
+}
+
+.card-body.from-loading {
+  position: relative;
+
+  .from-loading-spinner {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -24px;
+    margin-left: -24px;
+    z-index: 30;
+  }
+
+  &:after {
+    background: rgba(255, 255, 255, 0.35);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    cursor: progress;
+    z-index: 25;
+    content: "";
+  }
+
+  form {
+    filter: blur(2px);
+  }
+}

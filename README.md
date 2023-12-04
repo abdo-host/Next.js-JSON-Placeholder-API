@@ -1,8 +1,24 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+### This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+##### It is built on JSON placeholder API and using tailwind CSS
+
+#### Pages Includes
+- Show Posts
+- Photo Albums
+- Todo List
+- Contact Us
+    - Send email message using Mailtrap API
+
+## [Demo Link](https://nextjs.org/)
+
+---
+
+![alt text](https://tatwerat.com/downloads/Nextjs-App.png)
+
+---
 ## Getting Started
 
-First, run the development server:
+First edit <strong>.env</strong> file and run the development server:
 
 ```bash
 npm run dev

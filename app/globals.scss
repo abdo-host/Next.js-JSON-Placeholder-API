@@ -1,0 +1,54 @@
+@import "bootstrap/scss/bootstrap";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+button, [type='button'], [type='reset'], [type='submit'] {
+  outline: none !important;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: #f5f5f5;
+}
+
+.w-90 {
+  width: 90%;
+}
+
+.w-80 {
+  width: 80%;
+}
+
+.font-medium {
+  font-weight: 600;
+}
+
+.pointer-event {
+  cursor: pointer;
+}
+
+.table {
+  th, td {
+    vertical-align: middle;
+  }
+}
+
+[data-floating-ui-portal] .bg-opacity-60.backdrop-blur-sm {
+  background-color: rgba(0, 0, 0, 0.6) !important;
+}
